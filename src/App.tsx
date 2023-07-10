@@ -6,9 +6,15 @@ import * as Chakra from "@chakra-ui/react";
 function App() {
   return (
     <>
+      <Chakra.Grid
+        templateAreas={{
+          base: `"navbar" "main" "footer"`,
+          lg: `"navbar" "main" "footer"`,
+        }}
+      ></Chakra.Grid>
       <Chakra.Box
-        w="100%"
-        h="200px"
+        w={window.innerWidth}
+        h={window.innerHeight}
         bgGradient="linear(to-r, green.200, pink.500)"
       >
         <Chakra.Card>
