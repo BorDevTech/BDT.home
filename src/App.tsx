@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { Link, Routes, Route } from "react-router-dom";
-import Home from "./routes/home";
+import * as pages from "./routes/index";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       <nav>
-        <Link to={"/"}>Home</Link> 
+        <Link to={"/"}>Home</Link>
         <Routes>
-          <Route path={`/`} element={<Home/>} /> 
+          <Route path={`/`} element={<pages.Home />} />
         </Routes>
       </nav>
       <div>
