@@ -1,27 +1,25 @@
 import * as CUR from "@chakra-ui/react";
 import Brand from "./Brand";
 import CTA from "./CTA";
-import Search from "./Search";
 import Navlinks from "./Navlinks";
+import "./navbarStyles.css";
 
 const Navbar = () => {
   const AppName = "BorDev Tech";
   return (
     <>
       <nav>
-        <CUR.Grid
-          templateAreas={{
-            base: `"Brand Search Links CTA"`,
-            lg: `"Brand Search Links CTA"`,
-          }}
-          templateColumns={`repeat(4,1fr)`}
+        <CUR.HStack
           bgGradient={"linear(to-r, green.200, pink.500)"}
+          spacing={{
+            base: 2,
+            lg: 24,
+          }}
         >
           <Brand AppName={AppName} />
           <Navlinks />
-          <Search />
           <CTA />
-        </CUR.Grid>
+        </CUR.HStack>
       </nav>
     </>
   );
