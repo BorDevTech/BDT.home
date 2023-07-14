@@ -6,18 +6,22 @@ const Home = () => {
       <Chakra.GridItem
         area={"main"}
         bgGradient="linear(to-r, green.200, pink.500)"
-        h={"auto"}
       >
-        <Chakra.Card>
-          <Chakra.CardBody>Home</Chakra.CardBody>
-        </Chakra.Card>
+        <Chakra.Center>
+          <Chakra.Card w={"95%"}>
+            <Chakra.CardBody>Home</Chakra.CardBody>
+          </Chakra.Card>
+        </Chakra.Center>
       </Chakra.GridItem>
       <Chakra.GridItem
         area={"footer"}
         bgGradient="linear(to-r, green.200, pink.500)"
-        h={"auto"}
       >
-        Footer
+        <Chakra.Center>
+          <Chakra.Card w={"95%"}>
+            <Chakra.CardBody>Footer</Chakra.CardBody>
+          </Chakra.Card>
+        </Chakra.Center>
       </Chakra.GridItem>
     </>
   );

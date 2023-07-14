@@ -9,6 +9,13 @@ const Projects = () => {
       >
         Home
       </Chakra.GridItem>
+      <Chakra.GridItem
+        area={"footer"}
+        bgGradient="linear(to-r, green.200, pink.500)"
+        h={"auto"}
+      >
+        Footer
+      </Chakra.GridItem>
     </>
   );
 };

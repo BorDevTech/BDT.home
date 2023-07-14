@@ -7,21 +7,19 @@ import "./navbarStyles.css";
 const Navbar = () => {
   const AppName = "BorDev Tech";
   return (
-    <>
+    <CUR.GridItem area={"navbar"} w={window.innerWidth}>
       <nav>
-        <CUR.HStack
-          bgGradient={"linear(to-r, green.200, pink.500)"}
-          spacing={{
-            base: 2,
-            lg: 24,
-          }}
-        >
-          <Brand AppName={AppName} />
-          <Navlinks />
-          <CTA />
-        </CUR.HStack>
+        <CUR.Card>
+          <CUR.Flex bgGradient={"linear(to-r, green.200, pink.500)"}>
+            <Brand AppName={AppName} area={"brand"} />
+            <CUR.Spacer />
+            <Navlinks area={"navlinks"} />
+            <CUR.Spacer />
+            <CTA area={"cta"} />
+          </CUR.Flex>
+        </CUR.Card>
       </nav>
-    </>
+    </CUR.GridItem>
   );
 };
 
