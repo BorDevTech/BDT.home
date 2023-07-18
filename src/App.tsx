@@ -1,7 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import * as pages from "./routes/index";
-import * as CUR from "@chakra-ui/react";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
