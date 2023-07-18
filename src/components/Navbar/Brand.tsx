@@ -2,17 +2,20 @@ import * as CUR from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 interface Props {
-  AppName?: string;
-  area?: string;
+  homeRoute: string;
+  displayType: "generic" | "brand";
+  BrandName?: string;
 }
 
-const Brand = ({ AppName, area }: Props) => {
+const Brand = ({ homeRoute, displayType, BrandName }: Props) => {
   return (
-    <CUR.GridItem area={area}>
-      <CUR.Heading size={"lg"}>
-        <Link to={"/BDT.home"}>{AppName}</Link>
-      </CUR.Heading>
-    </CUR.GridItem>
+    <CUR.Heading as={Link} to={homeRoute}>
+      {displayType === "generic"
+        ? "Example Title"
+        : displayType === "brand"
+        ? BrandName
+        : null}
+    </CUR.Heading>
   );
 };
 

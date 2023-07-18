@@ -3,23 +3,33 @@ import Brand from "./Brand";
 import CTA from "./CTA";
 import Navlinks from "./Navlinks";
 import "./navbarStyles.css";
+import Search from "./Search";
 
 const Navbar = () => {
-  const AppName = "BorDev Tech";
   return (
-    <CUR.GridItem area={"navbar"} w={window.innerWidth}>
+    <CUR.Card>
       <nav>
-        <CUR.Card>
-          <CUR.Flex bgGradient={"linear(to-r, green.200, pink.500)"}>
-            <Brand AppName={AppName} area={"brand"} />
+        <CUR.Flex
+          p={"1.5px"}
+          bgGradient="linear(to-r, blue.200,yellow.300, orange.400)"
+        >
+          <CUR.Flex gap={4}>
+            <Brand
+              homeRoute={"/BDT.home"}
+              displayType={"brand"}
+              BrandName="BorDev Tech"
+            />
             <CUR.Spacer />
-            <Navlinks area={"navlinks"} />
-            <CUR.Spacer />
-            <CTA area={"cta"} />
+            <Navlinks />
           </CUR.Flex>
-        </CUR.Card>
+          <CUR.Spacer />
+          <CUR.Flex gap={12}>
+            <Search />
+            <CTA />
+          </CUR.Flex>
+        </CUR.Flex>
       </nav>
-    </CUR.GridItem>
+    </CUR.Card>
   );
 };
 
