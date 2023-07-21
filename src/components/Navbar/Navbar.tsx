@@ -19,9 +19,9 @@ const Navbar = () => {
               displayType={"brand"}
               BrandName="BorDev Tech"
             />
-            <CUR.Spacer />
-            <Navlinks />
           </CUR.Flex>
+          <CUR.Spacer />
+          <Navlinks />
           <CUR.Spacer />
           <CUR.Flex gap={12}>
             <Search />

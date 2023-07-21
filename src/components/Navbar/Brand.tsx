@@ -9,13 +9,19 @@ interface Props {
 
 const Brand = ({ homeRoute, displayType, BrandName }: Props) => {
   return (
-    <CUR.Heading as={Link} to={homeRoute}>
-      {displayType === "generic"
-        ? "Example Title"
-        : displayType === "brand"
-        ? BrandName
-        : null}
-    </CUR.Heading>
+    <CUR.Box p={"2"}>
+      <CUR.Heading as={"h1"} size={"md"}>
+        <Link to={homeRoute}>
+          <CUR.Text textAlign={"center"}>
+            {displayType === "generic"
+              ? "Example Title"
+              : displayType === "brand"
+              ? BrandName
+              : null}
+          </CUR.Text>
+        </Link>
+      </CUR.Heading>
+    </CUR.Box>
   );
 };
 

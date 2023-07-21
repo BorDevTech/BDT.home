@@ -7,7 +7,7 @@ const Projects = () => {
         area={"main"}
         bgGradient="linear(to-r, green.200, pink.500)"
       >
-        Home
+        Projects
       </Chakra.GridItem>
       <Chakra.GridItem
         area={"footer"}
