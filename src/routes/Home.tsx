@@ -4,8 +4,7 @@ const Home = () => {
   return (
     <>
       <CUR.VStack bgGradient="linear(to-r, green.200, pink.500)">
-        <CUR.Spacer h={"200px"} />
-        <CUR.Box w={"80%"}>
+        <CUR.Box w={"80%"} mt={"50px"}>
           <CUR.Flex></CUR.Flex>
           <CUR.Card bg={"blackAlpha.200"}>
             <CUR.CardHeader>
