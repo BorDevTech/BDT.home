@@ -8,7 +8,7 @@ type HorizontalRowsWrap = {
   spacing: "20px";
 };
 
-export const CommonCardsContainer = (props: Props) => {
+export const CommonCardsContainer = ( {}: Props) => {
   return (
     <div>
       <CUR.Wrap>
