@@ -1,4 +1,5 @@
 import * as CUR from "@chakra-ui/react";
+import CommonFooter from "../components/Footer/Common/CommonFooter";
 
 const Home = () => {
   return (
@@ -37,7 +38,84 @@ const Home = () => {
           </CUR.Center>
         </CUR.Box>
 
-        <CUR.Flex>Footer</CUR.Flex>
+        <CUR.Flex>
+          <CommonFooter layoutDirection="column" />
+
+          <CUR.Card>
+            <CUR.CardHeader>
+              <CUR.Heading as={"h3"} size={"xs"}>
+                Header B
+              </CUR.Heading>
+            </CUR.CardHeader>
+            <CUR.CardBody>
+              <CUR.Center>
+                <CUR.Text>BBBB</CUR.Text>
+              </CUR.Center>
+              <CUR.Divider w={"100%"} />
+              <CUR.Center>
+                <CUR.Text>BBBB</CUR.Text>
+              </CUR.Center>
+              <CUR.Divider w={"100%"} />
+              <CUR.Center>
+                <CUR.Text>BBBB</CUR.Text>
+              </CUR.Center>
+              <CUR.Divider w={"100%"} />
+              <CUR.Center>
+                <CUR.Text>BBBB</CUR.Text>
+              </CUR.Center>
+            </CUR.CardBody>
+          </CUR.Card>
+
+          <CUR.Card>
+            <CUR.CardHeader>
+              <CUR.Heading as={"h3"} size={"xs"}>
+                Header C
+              </CUR.Heading>
+            </CUR.CardHeader>
+            <CUR.CardBody>
+              <CUR.Center>
+                <CUR.Text>CCCC</CUR.Text>
+              </CUR.Center>
+              <CUR.Divider w={"100%"} />
+              <CUR.Center>
+                <CUR.Text>CCCC</CUR.Text>
+              </CUR.Center>
+              <CUR.Divider w={"100%"} />
+              <CUR.Center>
+                <CUR.Text>CCCC</CUR.Text>
+              </CUR.Center>
+              <CUR.Divider w={"100%"} />
+              <CUR.Center>
+                <CUR.Text>CCCC</CUR.Text>
+              </CUR.Center>
+            </CUR.CardBody>
+          </CUR.Card>
+
+          <CUR.Card>
+            <CUR.CardHeader>
+              <CUR.Heading as={"h3"} size={"xs"}>
+                Header D
+              </CUR.Heading>
+            </CUR.CardHeader>
+            <CUR.CardBody>
+              <CUR.Center>
+                <CUR.Text>DDDD</CUR.Text>
+              </CUR.Center>
+              <CUR.Divider w={"100%"} />
+              <CUR.Center>
+                <CUR.Text>DDDD</CUR.Text>
+              </CUR.Center>
+              <CUR.Divider w={"100%"} />
+              <CUR.Center>
+                <CUR.Text>DDDD</CUR.Text>
+              </CUR.Center>
+              <CUR.Divider w={"100%"} />
+              <CUR.Center>
+                <CUR.Text>DDDD</CUR.Text>
+              </CUR.Center>
+            </CUR.CardBody>
+          </CUR.Card>
+        </CUR.Flex>
       </CUR.VStack>
     </>
   );
