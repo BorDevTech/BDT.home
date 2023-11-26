@@ -8,12 +8,12 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path={`/BDT.home`} element={<pages.Home />} />
-        <Route path={`/BDT.home/about`} element={<pages.About />} />
-        <Route path={`/BDT.home/services`} element={<pages.Services />} />
-        <Route path={`/BDT.home/projects`} element={<pages.Projects />} />
-        <Route path={`/BDT.home/contact`} element={<pages.Contact />} />
-        <Route path={`/BDT.home/index`} element={<pages.Home />} />
+        <Route path={`/`} element={<pages.Home />} />
+        <Route path={`/about`} element={<pages.About />} />
+        <Route path={`/services`} element={<pages.Services />} />
+        <Route path={`/projects`} element={<pages.Projects />} />
+        <Route path={`/contact`} element={<pages.Contact />} />
+        <Route path={`/index`} element={<pages.Home />} />
       </Routes>
     </>
   );
