@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import * as pages from "./routes/index";
+import * as V1Pages from "./V1/Routes/index";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path={`/projects`} element={<pages.Projects />} />
         <Route path={`/contact`} element={<pages.Contact />} />
         <Route path={`/index`} element={<pages.Home />} />
+        <Route path={`/v1`} element={<V1Pages.Home />} />
       </Routes>
     </>
   );
