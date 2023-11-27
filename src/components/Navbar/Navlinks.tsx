@@ -3,10 +3,10 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Navlinks = () => {
   const navLinks = [
-    { key: 0, link: "About", route: "/BDT.home/about" },
-    { key: 1, link: "Services", route: "/BDT.home/services" },
-    { key: 2, link: "Projects", route: "/BDT.home/projects" },
-    { key: 3, link: "Contact", route: "/BDT.home/contact" },
+    { key: 0, link: "About", route: " /b/about/" },
+    { key: 1, link: "Services", route: " /b/services/" },
+    { key: 2, link: "Projects", route: " /b/projects/" },
+    { key: 3, link: "Contact", route: " /b/contact/" },
   ];
   const navigate = useNavigate();
 

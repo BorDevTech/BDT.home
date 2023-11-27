@@ -1,5 +1,4 @@
 const appName = () => {
-  return <div>appName</div>;
+  return;
 };
-
 export default appName;
